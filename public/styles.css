@@ -1,0 +1,43 @@
+body {
+    background-color: grey;
+    font-family: 'Kaushan Script', cursive;
+}
+
+table {
+    /* border: 1px solid blue; */
+    table-layout: fixed;
+    background-color: black;
+}
+td {
+    /* border: 1px solid red; */
+    width: calc(100%/8);
+    text-align: center;
+}
+
+th {
+    /* border: 1px solid yellow; */
+    font-size: 1.25rem;
+}
+
+.tasks {
+    background-color: black;
+}
+
+.dg {
+    background-color: #63676e;
+}
+
+.lg {
+    background-color: grey;
+}
+table, td, th {
+    border: 1px solid #bcc0c4;
+    padding: 10px;
+}
+
+button {
+    background-color: #3586f0;
+    color: white;
+    border-radius: 10%;
+    padding: 5px;
+}
