@@ -1,43 +1,71 @@
-body {
-    background-color: grey;
-    font-family: 'Kaushan Script', cursive;
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  font-family: "Kaushan Script", cursive;
+  background-color: #8e918f;  
+  font-size: 1.25rem;
 }
 
-table {
-    /* border: 1px solid blue; */
-    table-layout: fixed;
-    background-color: black;
+#main {
+  border-radius: 4px;
+  margin: 16px;
+  border: 1px solid lightgray;
 }
+
+#character-table {
+  width: 100%;
+  background-color: black;
+  padding: 2px;
+}
+
+#character-table thead {
+  font-weight: bold;
+}
+
+#character-table td {
+  vertical-align: top;
+}
+
+#character-table td {
+  vertical-align: top;
+  border-bottom: 1px solid lightgray;
+}
+
+td button {
+    width: 100%;
+  height: 100%;
+}
+
 td {
-    /* border: 1px solid red; */
-    width: calc(100%/8);
-    text-align: center;
+  width: calc(100% / 8);
+  text-align: center;
 }
 
-th {
-    /* border: 1px solid yellow; */
-    font-size: 1.25rem;
+/*  Define the background color for all the ODD table columns  */
+td:nth-child(odd) {
+  background: #63676e;
+}
+/*  Define the background color for all the EVEN table columns  */
+td:nth-child(even) {
+  background: grey;
 }
 
-.tasks {
-    background-color: black;
+.btn {
+  margin-left: 20px;
+  border-radius: 5px;
 }
 
-.dg {
-    background-color: #63676e;
+.btnStyle {
+  background-color: #3586f0;
+  width: 50%;
+  margin-bottom: 12px;
 }
 
-.lg {
-    background-color: grey;
-}
-table, td, th {
-    border: 1px solid #bcc0c4;
-    padding: 10px;
-}
+button:hover {background-color: white}
 
-button {
-    background-color: #3586f0;
-    color: white;
-    border-radius: 10%;
-    padding: 5px;
-}
+button:active {
+  box-shadow: 0 2px #666;
+  transform: translateY(1px);}
